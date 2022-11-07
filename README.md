@@ -2,7 +2,11 @@
 
 🥳 Projeto para testar mensagens, baseado nas tecnologias `Electron` + `Vue` + `Vite`.
 
-## Run Application
+## Run Application Locally
+
+```sh
+npm install
+```
 
 ```sh
 npm run dev
