@@ -6,8 +6,8 @@
         <q-input v-model="objMessage[field.name]"  v-else-if="field.type == 'string'" filled  :label="field.name" />
         <div v-else-if="field.type == 'record' || field.type.type == 'record'">  
           <div v-for="(subfield,i) in field.type.fields" :key="i">
-            <q-select  filled  v-if="subfield.type == 'enum' || subfield.type.type == 'enum'" v-model="objMessage[subfield.name]" :options="subfield.comment" :label="subfield.name" />
-            <q-input  v-else-if="subfield.type == 'string' " v-model="objMessage[subfield.name]" filled :label="subfield.name" />
+            <q-select  filled  v-if="subfield.type == 'enum' || subfield.type.type == 'enum'" v-model="objMessage[field.name][subfield.name]" :options="subfield.comment" :label="field.name" />
+            <q-input  v-else-if="subfield.type == 'string' " v-model="objMessage[field.name][subfield.name]" filled :label="field.name" />
           </div>
         </div>
       </div>
