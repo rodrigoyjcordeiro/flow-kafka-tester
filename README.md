@@ -1,6 +1,6 @@
-# electron-vite-vue
+# flow-kafka-tester
 
-🥳 Really simple `Electron` + `Vue` + `Vite` boilerplate.
+🥳 Projeto para testar mensagens, baseado nas tecnologias `Electron` + `Vue` + `Vite`.
 
 ## Run Application
 
